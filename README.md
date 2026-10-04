@@ -21,7 +21,9 @@ verified my work with Claude to get explanation on where I did not understand.
 
 - Question 19: I resued `q1` for both the second state and final accepting state, making the diagram ambiguous even though the drawn transitions were correct. I renamed the accepting state to `q3`
 
-- Question 22-24: I did not account for the self-loops on 0, making the diagram reject any valid strings with one or more zeros in them.
+- Question 24: I did not account for the self-loops on 0 for each sub NFA, making the overall diagram reject any valid strings with one or more zeros in them.
+
+- Question 22-23: I applied the self-loop learned from question 24, making these union designs correct on the first attempt
 
 In the future, I will try to avoid this by asking myself two questions:
 
@@ -30,5 +32,5 @@ In the future, I will try to avoid this by asking myself two questions:
 
 ## Other insights/comments/questions that you want the grader/instructor to know
 
-- Working through each design by hand-tracing test string for every chosen problem on paper before building in FJLAP
+- Working through each design by hand-tracing test string for every chosen problem on paper before building in JFLAP
 - All chosen problems have full step-by-step traces in JFLAP, exceeding the minimum of 3
